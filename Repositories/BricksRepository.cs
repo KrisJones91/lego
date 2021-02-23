@@ -30,9 +30,9 @@ namespace lego.Repositories
         {
             string sql = @"
                 INSERT INTO Bricks
-                    (title, description, price)
+                    (color, pegs, price)
                 VALUES
-                    (@Title, @Description, @Price);
+                    (@Color, @Pegs, @Price);
                 SELECT LAST_INSERT_ID();
                 ";
             int id = _db.ExecuteScalar<int>(sql, newBrick);
@@ -45,8 +45,8 @@ namespace lego.Repositories
             string sql = @"
                 UPDATE FROM Bricks
                 SET
-                    title = @Title,
-                    description = @Description,
+                    color = @Color,
+                    pegs = @Pegs,
                     price = @Price
                 WHERE id = @Id";
             _db.Execute(sql, update);

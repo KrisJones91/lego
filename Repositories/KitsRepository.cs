@@ -30,9 +30,9 @@ namespace lego.Repositories
         {
             string sql = @"
                 INSERT INTO Kits
-                    (title, description, price)
+                    (name, description, price)
                 VALUES
-                    (@Title, @Description, @Price);
+                    (@Name, @Description, @Price);
                 SELECT LAST_INSERT_ID();
                 ";
             int id = _db.ExecuteScalar<int>(sql, newKit);
