@@ -32,7 +32,7 @@ namespace lego.Repositories
                 INSERT INTO Bricks
                     (color, pegs, price)
                 VALUES
-                    (@Color, @Pegs, @Price);
+                    (@color, @pegs, @price);
                 SELECT LAST_INSERT_ID();
                 ";
             int id = _db.ExecuteScalar<int>(sql, newBrick);
@@ -45,9 +45,9 @@ namespace lego.Repositories
             string sql = @"
                 UPDATE FROM Bricks
                 SET
-                    color = @Color,
-                    pegs = @Pegs,
-                    price = @Price
+                    color = @color,
+                    pegs = @pegs,
+                    price = @price
                 WHERE id = @Id";
             _db.Execute(sql, update);
             return update;

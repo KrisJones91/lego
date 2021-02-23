@@ -32,7 +32,7 @@ namespace lego.Repositories
                 INSERT INTO Kits
                     (name, description, price)
                 VALUES
-                    (@Name, @Description, @Price);
+                    (@name, @description, @price);
                 SELECT LAST_INSERT_ID();
                 ";
             int id = _db.ExecuteScalar<int>(sql, newKit);
@@ -45,9 +45,9 @@ namespace lego.Repositories
             string sql = @"
                 UPDATE FROM Kits
                 SET
-                    name = @Name,
-                    description = @Description,
-                    price = @Price
+                    name = @name,
+                    description = @description,
+                    price = @price
                 WHERE id = @Id";
             _db.Execute(sql, update);
             return update;
