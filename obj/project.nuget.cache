@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "zmAU/ffCPJe48ik+LvuxSiJbA/0EP79s1wQuF2rZ7dq48ciSNgxmlFjciKtf5n1Nyi9OxukS2s4l85JaZx5+bA==",
+  "success": true,
+  "projectFilePath": "/Users/_kris/Desktop/Codeworks/lego/lego.csproj",
+  "expectedPackageFiles": [
+    "/Users/_kris/.nuget/packages/dapper/2.0.78/dapper.2.0.78.nupkg.sha512",
+    "/Users/_kris/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/_kris/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/_kris/.nuget/packages/mysqlconnector/1.2.1/mysqlconnector.1.2.1.nupkg.sha512",
+    "/Users/_kris/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/_kris/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/_kris/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/_kris/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
