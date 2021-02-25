@@ -38,8 +38,8 @@ namespace lego.Services
         {
             var original = GetById(updated.Id);
 
+            updated.name = updated.name != null ? updated.name : original.name;
             updated.color = updated.color != null ? updated.color : original.color;
-            updated.pegs = updated.pegs > 0 ? updated.pegs : original.pegs;
             updated.price = updated.price > 0 ? updated.price : original.price;
 
             return _repo.Edit(updated);

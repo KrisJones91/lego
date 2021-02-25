@@ -39,6 +39,8 @@ namespace lego
             services.AddTransient<BricksService>();
             services.AddTransient<KitsService>();
 
+            //Scoped
+            services.AddScoped<IDbConnection>(x => CreateDbConnection());
 
 
             services.AddControllers();
